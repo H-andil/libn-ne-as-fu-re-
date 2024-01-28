@@ -1,0 +1,10 @@
+def aasfouri(str):
+    str = input("Type a sentence in Lebanese: ")
+    vowels = ['a', 'e', 'i', 'o', 'u']
+    for n in vowels:
+            if n in str:
+                str = str.replace(n, n + "z" + n)
+
+
+    return str
+print(aasfouri(str))
